@@ -6,7 +6,6 @@ def getCurrentTime(){
 }
 
 
-
 android {
     compileSdkVersion 23
     defaultConfig {
@@ -14,7 +13,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 22
         versionCode getCurrentTime()
-        versionName "1.1"
+        versionName "1.1_"+getCurrentTime()
     }
     buildTypes {
         release {
