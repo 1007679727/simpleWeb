@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+
+def getCurrentTime(){
+    return (int)(System.currentTimeMillis()/(1000*60*60*24));
+}
+
+
+
+android {
+    compileSdkVersion 23
+    defaultConfig {
+        applicationId "com.example.simplebrowser"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode getCurrentTime()
+        versionName "1.1"
+    }
+    buildTypes {
+        release {
+            initWith(debug)
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:22.0.0'
+//    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+}

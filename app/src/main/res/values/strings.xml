@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">简易浏览器</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="browse">输入网址</string>
+    <string name="left">回退</string>
+    <string name="right">前进</string>
+    <string name="input">请输入网址</string>
+</resources>
