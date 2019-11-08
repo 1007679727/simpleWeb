@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 
-def getCurrentTime(){
+def getToday(){
     return (int)(System.currentTimeMillis()/(1000*60*60*24));
 }
 
@@ -12,8 +12,8 @@ android {
         applicationId "com.example.simplebrowser"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode getCurrentTime()
-        versionName "1.1_"+getCurrentTime()
+        versionCode getToday()
+        versionName "1.1_"+getToday()
     }
     buildTypes {
         release {
